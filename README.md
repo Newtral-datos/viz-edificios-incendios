@@ -1,25 +1,53 @@
-# Dimensionar incendios
+# Edificios calcinados
 
-Visualización interactiva que superpone el perímetro real de un incendio
-sobre una ciudad conocida, para entender su verdadera escala. El usuario
-elige un incendio real y una ciudad de referencia (o ve el incendio en su
-ubicación real) y el mapa traslada el polígono conservando su forma y
-tamaño exactos.
+Mapa interactivo de los edificios de Catastro afectados por los incendios de
+la temporada 2026, cruzados con los perímetros de incendios del panel de
+incendios. Es la app de visualización del pipeline de datos del repo
+principal (`../scripts`).
 
 ## Stack
 
 - [Svelte 5](https://svelte.dev/) + [Vite](https://vitejs.dev/)
 - [MapLibre GL](https://maplibre.org/) para el mapa, con tiles CartoDB
   Positron (basados en datos de OpenStreetMap)
-- [Turf.js](https://turfjs.org/) para el traslado geodésico del polígono
+- [PMTiles](https://protomaps.com/docs/pmtiles) para servir tanto los
+  edificios afectados como los perímetros de incendios como vector tiles,
+  sin depender de un servidor de teselas
+
+## Datos
+
+Esta app no genera datos por sí misma: los toma de las salidas del pipeline
+del repo principal y del panel de incendios (geojson diario, fuera de este
+repo). `scripts/prepare_data.py` prepara todo lo que necesita `public/data/`:
+
+```bash
+python3 scripts/prepare_data.py   # o: npm run prepare-data
+```
+
+Genera (sin trackear en git, ver `.gitignore`):
+
+- `public/data/edificios_afectados.pmtiles` — copia de
+  `../data/03_pmtiles/edificios_afectados.pmtiles` (requiere haber corrido
+  antes `../scripts/05_edificios_afectados.py` y
+  `../scripts/06_generar_pmtiles.py`, o `../PIPELINE_EDIFICIOS_AFECTADOS.py`).
+- `public/data/incendios.pmtiles` — perímetros de incendios de la temporada
+  actual (filtrados por `AÑO == año actual`), convertidos de geojson a
+  pmtiles con tippecanoe porque el geojson diario del panel pesa 140MB+.
+- `public/data/resumen.json` — total de edificios afectados y desglose por
+  provincia, leído de `../data/02_edificios_afectados/_resumen_afectados.csv`.
+
+Como el geojson de incendios es el de **hoy**, hay que volver a ejecutar
+`prepare_data.py` (después de haber corrido de nuevo el pipeline principal)
+para refrescar el mapa con los datos de otro día.
 
 ## Desarrollo
 
 ```bash
 npm install
-npm run dev       # servidor de desarrollo
-npm run build     # build de producción en dist/
-npm run preview   # sirve el build de producción
+npm run prepare-data   # genera public/data/ (ver arriba)
+npm run dev             # servidor de desarrollo
+npm run build           # build de producción en dist/
+npm run preview         # sirve el build de producción
 ```
 
 ## Estructura
@@ -27,37 +55,28 @@ npm run preview   # sirve el build de producción
 ```
 app/
 ├── public/
-│   ├── data/            # un GeoJSON por incendio (generado por extract_data.py)
+│   ├── data/              # pmtiles + resumen.json (generados, no en git)
 │   └── logo_newtral.png
+├── scripts/
+│   └── prepare_data.py    # prepara public/data/ a partir del pipeline principal
 ├── src/
-│   ├── App.svelte        # orquesta selección de incendio/ciudad y el mapa
-│   ├── app.css            # tokens de diseño (color, tipografía) y estilos base
+│   ├── App.svelte         # orquesta el mapa y el panel lateral
+│   ├── app.css             # tokens de diseño (color, tipografía) y estilos base
 │   └── lib/
-│       ├── FireMap.svelte     # mapa MapLibre + capa del incendio
-│       ├── ControlPanel.svelte # panel de controles y estadísticas
-│       ├── fires.js            # catálogo de incendios (generado, no editar a mano)
-│       ├── cities.js           # ciudades de referencia y sus coordenadas
-│       └── geo.js              # traslado geodésico, área, bounds
+│       ├── MapView.svelte     # mapa MapLibre + capas pmtiles de incendios/edificios
+│       └── Sidebar.svelte     # panel de capas, cifra total y provincias más afectadas
 └── vite.config.js
 ```
 
-## Cómo funciona el traslado
+## Capas del mapa
 
-`geo.js#recenterGeoJSON` traslada cada vértice del polígono conservando su
-distancia y rumbo reales respecto al centroide original, y los recalcula
-desde el nuevo centro con cálculo geodésico (`turf.destination`). Esto
-mantiene la forma y el área exactas del incendio; solo cambia su posición.
-No se usa `turf.transformTranslate` porque, al aplicar la misma
-distancia/rumbo a todos los vértices, desplaza el centroide varios
-kilómetros del objetivo en traslados largos (rumbo constante ≠ traslación
-rígida sobre una esfera).
+- **Perímetros de incendios** (`incendios.pmtiles`, capa `incendios`):
+  relleno y contorno en rojo, visibles a cualquier zoom.
+- **Edificios afectados** (`edificios_afectados.pmtiles`, capa
+  `edificios_afectados`): huellas de Catastro en morado, visibles a partir
+  de zoom 9 — a escala de toda España son sub-píxel, así que sirven de
+  referencia el perímetro del incendio para saber dónde acercarse.
 
-La opción **"Ubicación real"** no traslada nada: muestra el polígono en su
-posición geográfica original.
-
-## Añadir una ciudad de referencia
-
-Editar `src/lib/cities.js`: cada entrada necesita `id`, `name`, `center`
-(`[lon, lat]`) y `zoom`. La entrada con `real: true` es la opción
-"Ubicación real" y no debe tener `center` propio (se calcula del incendio
-seleccionado).
+Ambas capas se pueden ocultar de forma independiente desde el panel lateral,
+y al hacer clic sobre un edificio o un incendio se abre un popup con sus
+atributos (uso, viviendas, fecha del incendio, hectáreas...).

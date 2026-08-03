@@ -1,130 +1,61 @@
 <script>
-	import FireMap from './lib/FireMap.svelte';
-	import ControlPanel from './lib/ControlPanel.svelte';
-	import { fires, fireGroups } from './lib/fires.js';
-	import { cities } from './lib/cities.js';
-	import { recenterGeoJSON, realCenter } from './lib/geo.js';
+	import MapView from './lib/MapView.svelte';
+	import Sidebar from './lib/Sidebar.svelte';
 
 	// Rutas a /public/*: hay que anteponer el base path (vacío en dev, el
 	// subpath del repo en el build de GitHub Pages, ver vite.config.js).
 	const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
 
-	let selectedGroupId = $state(fireGroups[0].id);
-	let selectedFireId = $state(
-		fires.find((f) => f.group === fireGroups[0].id)?.id ?? fires[0].id
-	);
-	let selectedCityId = $state(cities.find((c) => c.real)?.id ?? cities[0].id);
+	// 'actual' (temporada 2026, siempre disponible) o 'historico'
+	// (2016..año anterior, solo si app/scripts/prepare_data.py --historico
+	// ya se ha ejecutado). Vive aquí porque MapView (qué capas de pmtiles
+	// mostrar) y Sidebar (qué resumen mostrar, más las pestañas para
+	// cambiarla) necesitan compartir el mismo estado.
+	let vista = $state('actual');
+	// Interruptor de los puntos de centroide a poco zoom (ver MapView),
+	// controlado desde el Sidebar; vive aquí por el mismo motivo que
+	// `vista`: MapView (aplica la visibilidad de la capa) y Sidebar (dibuja
+	// el interruptor) necesitan compartir el mismo estado.
+	let mostrarCentroides = $state(true);
 
-	// Modo "Elige un punto en el mapa": independiente del desplegable de
-	// ciudad, se activa con su propio botón.
-	let pickModeActive = $state(false);
-	let clickedPoint = $state(null);
+	let resumenActual = $state(null);
+	let resumenHistorico = $state(null);
+	const resumen = $derived(vista === 'historico' ? resumenHistorico : resumenActual);
+	// Aparte de `resumen`: la pestaña "histórico" de Sidebar necesita poder
+	// rotular su rango de años aunque la vista activa sea "actual" (y por
+	// tanto resumen todavía no sea resumenHistorico).
+	const periodoHistorico = $derived(resumenHistorico?.periodo ?? null);
 
-	// Elegir una ciudad del desplegable sale del modo de selección por clic.
+	// Ambos se piden una sola vez al montar: son ligeros (resumen.json es de
+	// pocos KB), así que no compensa la complejidad de pedir el histórico
+	// solo al abrir su pestaña. Si resumen_historico.json todavía no existe
+	// (--historico no se ha ejecutado nunca), el fetch falla en silencio y
+	// resumenHistorico se queda a null — igual que ya se comportaba este
+	// efecto si resumen.json faltaba, sin manejo de errores explícito.
 	$effect(() => {
-		selectedCityId;
-		pickModeActive = false;
-	});
-
-	let rawGeojson = $state(null);
-	let loadedFireId = $state(null);
-
-	const firesInGroup = $derived(fires.filter((f) => f.group === selectedGroupId));
-
-	// Si se cambia de grupo y el incendio elegido no pertenece a él, selecciona
-	// el primero (el más grande) del nuevo grupo.
-	$effect(() => {
-		if (firesInGroup.length && !firesInGroup.some((f) => f.id === selectedFireId)) {
-			selectedFireId = firesInGroup[0].id;
-		}
-	});
-
-	const selectedFire = $derived(fires.find((f) => f.id === selectedFireId));
-	const selectedCity = $derived(cities.find((c) => c.id === selectedCityId));
-
-	$effect(() => {
-		const fire = selectedFire;
-		if (!fire) return;
-		fetch(asset(fire.file))
+		fetch(asset('data/resumen.json'))
 			.then((res) => res.json())
 			.then((data) => {
-				rawGeojson = data;
-				loadedFireId = fire.id;
+				resumenActual = data;
 			});
+		fetch(asset('data/resumen_historico.json'))
+			.then((res) => res.json())
+			.then((data) => {
+				resumenHistorico = data;
+			})
+			.catch(() => {});
 	});
-
-	const fireLoaded = $derived(rawGeojson && loadedFireId === selectedFireId);
-
-	// En modo "elige un punto" sin clic todavía, o en "ubicación real", el
-	// incendio se muestra sin trasladar.
-	const usesRealPosition = $derived(
-		pickModeActive ? !clickedPoint : !!selectedCity?.real
-	);
-	const targetCenter = $derived(
-		pickModeActive ? clickedPoint : (selectedCity?.center ?? null)
-	);
-
-	const displayGeojson = $derived(
-		fireLoaded && selectedCity
-			? usesRealPosition
-				? rawGeojson
-				: recenterGeoJSON(rawGeojson, targetCenter)
-			: null
-	);
-
-	const mapCenter = $derived(
-		fireLoaded && selectedCity
-			? usesRealPosition
-				? realCenter(rawGeojson)
-				: targetCenter
-			: [-3.7, 40.4]
-	);
-
-	const fireProps = $derived(rawGeojson?.features?.[0]?.properties ?? null);
-	// Superficie original de EFFIS/Copernicus, no la recalculada por turf sobre
-	// el polígono trasladado: coinciden con la cifra del nombre del incendio.
-	const areaHa = $derived(fireProps?.AREA_HA ?? null);
-
-	const noteMode = $derived(
-		pickModeActive
-			? clickedPoint
-				? 'click-set'
-				: 'click-pending'
-			: selectedCity?.real
-				? 'real'
-				: 'city'
-	);
-
-	function handleMapClick(lngLat) {
-		if (pickModeActive) clickedPoint = lngLat;
-	}
 </script>
 
 <main>
-	<FireMap
-		geojson={displayGeojson}
-		center={mapCenter}
-		zoom={selectedCity?.zoom ?? 10}
-		pickMode={pickModeActive}
-		onPick={handleMapClick}
-	/>
+	<MapView {vista} {mostrarCentroides} />
 
 	<header>
-		<span class="eyebrow">Dimensiona los incendios en las grandes ciudades</span>
+		<span class="eyebrow">Edificios afectados por incendios</span>
 		<img class="logo" src={asset('logo_newtral.png')} alt="Newtral" />
 	</header>
 
-	<ControlPanel
-		bind:selectedGroupId
-		bind:selectedFireId
-		bind:selectedCityId
-		bind:pickModeActive
-		{fireGroups}
-		fires={firesInGroup}
-		{areaHa}
-		{fireProps}
-		{noteMode}
-	/>
+	<Sidebar {resumen} {periodoHistorico} bind:vista bind:mostrarCentroides />
 </main>
 
 <style>

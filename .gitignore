@@ -17,6 +17,11 @@ dist-ssr
 /public/maplibre-gl-worker.mjs
 /public/maplibre-gl-shared.mjs
 
+# Generados por scripts/prepare_data.py a partir del pipeline de datos y del
+# panel de incendios (ver ese script), no hace falta trackearlos
+/public/data/*.pmtiles
+/public/data/resumen.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
