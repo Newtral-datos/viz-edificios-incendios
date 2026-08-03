@@ -1,0 +1,339 @@
+{
+  "fecha": "2026-08-03",
+  "total_viviendas_afectadas": 5383,
+  "total_edificios_afectados": 3499,
+  "categorias": [
+    {
+      "id": "viviendas",
+      "label": "Viviendas",
+      "valor": 5383,
+      "unidad": "viviendas"
+    },
+    {
+      "id": "agrario",
+      "label": "Agrario",
+      "valor": 1986,
+      "unidad": "edificios"
+    },
+    {
+      "id": "industrial",
+      "label": "Industrial",
+      "valor": 1051,
+      "unidad": "edificios"
+    },
+    {
+      "id": "servicios_publicos",
+      "label": "Servicios públicos",
+      "valor": 99,
+      "unidad": "edificios"
+    },
+    {
+      "id": "comercial",
+      "label": "Comercial",
+      "valor": 32,
+      "unidad": "edificios"
+    },
+    {
+      "id": "oficinas",
+      "label": "Oficinas",
+      "valor": 4,
+      "unidad": "edificios"
+    },
+    {
+      "id": "sin_clasificar",
+      "label": "Sin uso registrado",
+      "valor": 327,
+      "unidad": "edificios"
+    }
+  ],
+  "provincias": [
+    {
+      "ccaa": "COMUNIDAD_DE_MADRID",
+      "provincia": "MADRID",
+      "num_viviendas_afectadas": 2508,
+      "num_edificios_afectados": 363
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "AVILA",
+      "num_viviendas_afectadas": 1485,
+      "num_edificios_afectados": 1344
+    },
+    {
+      "ccaa": "CASTILLA_LA_MANCHA",
+      "provincia": "GUADALAJARA",
+      "num_viviendas_afectadas": 309,
+      "num_edificios_afectados": 349
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "ZAMORA",
+      "num_viviendas_afectadas": 211,
+      "num_edificios_afectados": 308
+    },
+    {
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "CASTELLON",
+      "num_viviendas_afectadas": 126,
+      "num_edificios_afectados": 240
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "ALMERIA",
+      "num_viviendas_afectadas": 148,
+      "num_edificios_afectados": 185
+    },
+    {
+      "ccaa": "ARAGON",
+      "provincia": "ZARAGOZA",
+      "num_viviendas_afectadas": 168,
+      "num_edificios_afectados": 137
+    },
+    {
+      "ccaa": "CATALUÑA",
+      "provincia": "BARCELONA",
+      "num_viviendas_afectadas": 114,
+      "num_edificios_afectados": 24
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "SEGOVIA",
+      "num_viviendas_afectadas": 32,
+      "num_edificios_afectados": 98
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "LEON",
+      "num_viviendas_afectadas": 79,
+      "num_edificios_afectados": 42
+    },
+    {
+      "ccaa": "CANTABRIA",
+      "provincia": "CANTABRIA",
+      "num_viviendas_afectadas": 15,
+      "num_edificios_afectados": 105
+    },
+    {
+      "ccaa": "EXTREMADURA",
+      "provincia": "CACERES",
+      "num_viviendas_afectadas": 56,
+      "num_edificios_afectados": 46
+    },
+    {
+      "ccaa": "ARAGON",
+      "provincia": "HUESCA",
+      "num_viviendas_afectadas": 3,
+      "num_edificios_afectados": 61
+    },
+    {
+      "ccaa": "CATALUÑA",
+      "provincia": "GIRONA",
+      "num_viviendas_afectadas": 34,
+      "num_edificios_afectados": 29
+    },
+    {
+      "ccaa": "CASTILLA_LA_MANCHA",
+      "provincia": "CIUDAD_REAL",
+      "num_viviendas_afectadas": 39,
+      "num_edificios_afectados": 23
+    },
+    {
+      "ccaa": "CASTILLA_LA_MANCHA",
+      "provincia": "TOLEDO",
+      "num_viviendas_afectadas": 25,
+      "num_edificios_afectados": 37
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "HUELVA",
+      "num_viviendas_afectadas": 11,
+      "num_edificios_afectados": 19
+    },
+    {
+      "ccaa": "ARAGON",
+      "provincia": "TERUEL",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 19
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "MALAGA",
+      "num_viviendas_afectadas": 9,
+      "num_edificios_afectados": 8
+    },
+    {
+      "ccaa": "CATALUÑA",
+      "provincia": "LLEIDA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 11
+    },
+    {
+      "ccaa": "EXTREMADURA",
+      "provincia": "BADAJOZ",
+      "num_viviendas_afectadas": 3,
+      "num_edificios_afectados": 8
+    },
+    {
+      "ccaa": "ASTURIAS",
+      "provincia": "ASTURIAS",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 10
+    },
+    {
+      "ccaa": "MURCIA",
+      "provincia": "MURCIA",
+      "num_viviendas_afectadas": 4,
+      "num_edificios_afectados": 5
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "GRANADA",
+      "num_viviendas_afectadas": 3,
+      "num_edificios_afectados": 4
+    },
+    {
+      "ccaa": "GALICIA",
+      "provincia": "A_CORUÑA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 6
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "VALLADOLID",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 5
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "CADIZ",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 4
+    },
+    {
+      "ccaa": "LA_RIOJA",
+      "provincia": "LA_RIOJA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 4
+    },
+    {
+      "ccaa": "CATALUÑA",
+      "provincia": "TARRAGONA",
+      "num_viviendas_afectadas": 1,
+      "num_edificios_afectados": 1
+    },
+    {
+      "ccaa": "GALICIA",
+      "provincia": "LUGO",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 2
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "SEVILLA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 1
+    },
+    {
+      "ccaa": "GALICIA",
+      "provincia": "OURENSE",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 1
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "CORDOBA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "JAEN",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "BALEARES",
+      "provincia": "BALEARES",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CANARIAS",
+      "provincia": "LAS_PALMAS",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CANARIAS",
+      "provincia": "TENERIFE",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CASTILLA_LA_MANCHA",
+      "provincia": "ALBACETE",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CASTILLA_LA_MANCHA",
+      "provincia": "CUENCA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "BURGOS",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "PALENCIA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "SALAMANCA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "SORIA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "CEUTA",
+      "provincia": "CEUTA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "ALICANTE",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "VALENCIA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "GALICIA",
+      "provincia": "PONTEVEDRA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    },
+    {
+      "ccaa": "MELILLA",
+      "provincia": "MELILLA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 0
+    }
+  ]
+}
