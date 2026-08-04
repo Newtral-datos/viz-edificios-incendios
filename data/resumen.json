@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-08-03",
-  "total_viviendas_afectadas": 5383,
-  "total_edificios_afectados": 3499,
+  "fecha": "2026-08-04",
+  "total_viviendas_afectadas": 5205,
+  "total_edificios_afectados": 3313,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5383,
+      "valor": 5205,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 1986,
+      "valor": 1974,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 1051,
+      "valor": 892,
       "unidad": "edificios"
     },
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 99,
+      "valor": 88,
       "unidad": "edificios"
     },
     {
       "id": "comercial",
       "label": "Comercial",
-      "valor": 32,
+      "valor": 29,
       "unidad": "edificios"
     },
     {
@@ -42,7 +42,7 @@
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 327,
+      "valor": 326,
       "unidad": "edificios"
     }
   ],
@@ -66,12 +66,6 @@
       "num_edificios_afectados": 349
     },
     {
-      "ccaa": "CASTILLA_LEON",
-      "provincia": "ZAMORA",
-      "num_viviendas_afectadas": 211,
-      "num_edificios_afectados": 308
-    },
-    {
       "ccaa": "COMUNIDAD_VALENCIANA",
       "provincia": "CASTELLON",
       "num_viviendas_afectadas": 126,
@@ -88,6 +82,12 @@
       "provincia": "ZARAGOZA",
       "num_viviendas_afectadas": 168,
       "num_edificios_afectados": 137
+    },
+    {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "ZAMORA",
+      "num_viviendas_afectadas": 32,
+      "num_edificios_afectados": 119
     },
     {
       "ccaa": "CATALUÑA",
@@ -162,16 +162,16 @@
       "num_edificios_afectados": 8
     },
     {
+      "ccaa": "EXTREMADURA",
+      "provincia": "BADAJOZ",
+      "num_viviendas_afectadas": 4,
+      "num_edificios_afectados": 11
+    },
+    {
       "ccaa": "CATALUÑA",
       "provincia": "LLEIDA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 11
-    },
-    {
-      "ccaa": "EXTREMADURA",
-      "provincia": "BADAJOZ",
-      "num_viviendas_afectadas": 3,
-      "num_edificios_afectados": 8
     },
     {
       "ccaa": "ASTURIAS",
