@@ -1,30 +1,30 @@
 {
-  "fecha": "2026-08-04",
-  "total_viviendas_afectadas": 5205,
-  "total_edificios_afectados": 3313,
+  "fecha": "2026-08-05",
+  "total_viviendas_afectadas": 5152,
+  "total_edificios_afectados": 3293,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5205,
+      "valor": 5152,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 1974,
+      "valor": 1971,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 892,
+      "valor": 878,
       "unidad": "edificios"
     },
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 88,
+      "valor": 85,
       "unidad": "edificios"
     },
     {
@@ -114,16 +114,10 @@
       "num_edificios_afectados": 105
     },
     {
-      "ccaa": "EXTREMADURA",
-      "provincia": "CACERES",
-      "num_viviendas_afectadas": 56,
-      "num_edificios_afectados": 46
-    },
-    {
       "ccaa": "ARAGON",
       "provincia": "HUESCA",
       "num_viviendas_afectadas": 3,
-      "num_edificios_afectados": 61
+      "num_edificios_afectados": 62
     },
     {
       "ccaa": "CATALUÑA",
@@ -150,6 +144,12 @@
       "num_edificios_afectados": 19
     },
     {
+      "ccaa": "EXTREMADURA",
+      "provincia": "CACERES",
+      "num_viviendas_afectadas": 3,
+      "num_edificios_afectados": 24
+    },
+    {
       "ccaa": "ARAGON",
       "provincia": "TERUEL",
       "num_viviendas_afectadas": 0,
@@ -165,7 +165,7 @@
       "ccaa": "EXTREMADURA",
       "provincia": "BADAJOZ",
       "num_viviendas_afectadas": 4,
-      "num_edificios_afectados": 11
+      "num_edificios_afectados": 12
     },
     {
       "ccaa": "CATALUÑA",
