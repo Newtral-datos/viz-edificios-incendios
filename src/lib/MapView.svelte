@@ -556,7 +556,6 @@
 					</div>
 				</div>
 				<dl class="popup-rows">
-					${row('Referencia catastral', p.reference)}
 					${row('Construcción', anioConstruccion)}
 					${row('Viviendas', viviendas)}
 					${row('Incendio', p.FECHA_INCENDIO)}

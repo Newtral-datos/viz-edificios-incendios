@@ -62,5 +62,14 @@ const NOMBRES_PROVINCIA = {
 // los guiones bajos convertidos a espacios, como se hacía antes.
 export function nombreProvincia(raw) {
 	if (!raw) return raw;
-	return NOMBRES_PROVINCIA[raw] ?? raw.replace(/_/g, ' ');
+	// normalize('NFC'): la Ñ llega descompuesta (N + tilde combinable, NFD)
+	// desde raw/00_bruto en macOS, mientras que las claves de
+	// NOMBRES_PROVINCIA están en forma precompuesta (NFC) — visualmente
+	// idénticas pero no comparan iguales como string sin normalizar antes
+	// (mismo problema que nombre_bonito() en scripts/07_estadisticas.py y
+	// scripts/09_tasa_afectacion_municipios.py, ver CLAUDE.md). Sin esto,
+	// "A_CORUÑA" caía silenciosamente al fallback ("A CORUÑA") en vez de
+	// encontrar "A Coruña" en el diccionario.
+	const normalizado = raw.normalize('NFC');
+	return NOMBRES_PROVINCIA[normalizado] ?? normalizado.replace(/_/g, ' ');
 }

@@ -8,8 +8,12 @@
 		mostrarCentroides = $bindable(true)
 	} = $props();
 
-	// Solo tiene efecto en móvil: en escritorio el tirador no es clicable.
-	let collapsed = $state(false);
+	// Solo tiene efecto en móvil: en escritorio el tirador no es clicable
+	// (la clase .collapsed no tiene ningún estilo fuera del media query).
+	// Empieza plegada para no tapar el mapa nada más entrar: el tirador +
+	// chevron + resumen de viviendas afectadas (ver handle-row más abajo,
+	// visibles solo cuando collapsed) ya indican que se puede desplegar.
+	let collapsed = $state(true);
 	let provinciasExpandido = $state(false);
 
 	// Etiqueta de la pestaña "histórico": usa el rango real en cuanto
@@ -83,6 +87,7 @@
 		<span class="handle-summary">
 			{formatNumber(viviendas?.valor)} viviendas afectadas
 		</span>
+		<span class="handle-cta">Toca para ver más</span>
 		<svg class="handle-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
 			<path d="m6 9 6 6 6-6"/>
 		</svg>
@@ -472,7 +477,16 @@
 			gap: 10px;
 			overflow: hidden;
 			transition: max-height 0.25s ease, opacity 0.2s ease;
-			max-height: 600px;
+			/* Con "Ver las X provincias" desplegado el contenido puede superar
+			   fácilmente 600px (tabs + hero + categorías + tabla completa) y
+			   quedaba recortado sin poder hacer scroll, porque overflow:hidden
+			   no deja que el .panel exterior (overflow-y: auto) llegue a ese
+			   contenido de más. 3000px no es la altura real (max-height solo
+			   limita, no fuerza), solo un techo muy por encima de cualquier
+			   contenido real para que la transición de plegado siga animando
+			   sin volver a recortar nada.
+			*/
+			max-height: 3000px;
 			opacity: 1;
 		}
 
@@ -499,11 +513,29 @@
 
 		.handle {
 			flex-shrink: 0;
-			width: 32px;
-			height: 4px;
-			border-radius: 2px;
+			width: 36px;
+			height: 5px;
+			border-radius: 3px;
 			background: var(--card-2);
 			border: 1px solid var(--border);
+			transition: background-color 0.2s ease, border-color 0.2s ease;
+		}
+
+		/* Tirador en color de acento + un par de rebotes verticales al cargar,
+		   para que quede claro que la caja plegada se puede desplegar y no es
+		   solo un adorno — sin animación en bucle infinito, que cansaría. */
+		.panel.collapsed .handle {
+			background: var(--fire);
+			border-color: var(--fire);
+		}
+
+		.panel.collapsed .handle-row {
+			animation: handle-hint 1.1s ease-in-out 0.7s 2;
+		}
+
+		@keyframes handle-hint {
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(-5px); }
 		}
 
 		.handle-summary {
@@ -521,6 +553,23 @@
 			transition: opacity 0.15s ease;
 		}
 
+		/* CTA explícita ("Toca para ver más"): la animación de rebote del
+		   tirador (ver .handle-hint más arriba) no bastaba por sí sola para
+		   que quedara claro que se puede desplegar, así que se añade texto
+		   literal, en color de acento para que destaque sobre el resto de
+		   la barra. flex-shrink: 0 para que nunca se trunque — si algo se
+		   recorta por falta de espacio, mejor que sea .handle-summary (el
+		   dato de viviendas, menos crítico aquí que la propia instrucción). */
+		.handle-cta {
+			flex-shrink: 0;
+			font-family: var(--font-mono);
+			font-size: 11px;
+			font-weight: 700;
+			color: var(--fire);
+			opacity: 0;
+			transition: opacity 0.15s ease;
+		}
+
 		.handle-chevron {
 			flex-shrink: 0;
 			width: 16px;
@@ -531,6 +580,10 @@
 		}
 
 		.panel.collapsed .handle-summary {
+			opacity: 1;
+		}
+
+		.panel.collapsed .handle-cta {
 			opacity: 1;
 		}
 
