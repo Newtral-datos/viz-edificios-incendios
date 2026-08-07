@@ -1,12 +1,12 @@
 {
   "fecha": "2026-08-07",
-  "total_viviendas_afectadas": 5152,
-  "total_edificios_afectados": 3294,
+  "total_viviendas_afectadas": 5157,
+  "total_edificios_afectados": 3296,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5152,
+      "valor": 5157,
       "unidad": "viviendas"
     },
     {
@@ -18,7 +18,7 @@
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 878,
+      "valor": 879,
       "unidad": "edificios"
     },
     {
@@ -42,7 +42,7 @@
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 326,
+      "valor": 327,
       "unidad": "edificios"
     }
   ],
@@ -140,8 +140,8 @@
     {
       "ccaa": "ANDALUCIA",
       "provincia": "HUELVA",
-      "num_viviendas_afectadas": 11,
-      "num_edificios_afectados": 20
+      "num_viviendas_afectadas": 16,
+      "num_edificios_afectados": 22
     },
     {
       "ccaa": "EXTREMADURA",
