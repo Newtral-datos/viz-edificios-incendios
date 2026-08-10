@@ -1,24 +1,24 @@
 {
-  "fecha": "2026-08-09",
-  "total_viviendas_afectadas": 5157,
-  "total_edificios_afectados": 3296,
+  "fecha": "2026-08-10",
+  "total_viviendas_afectadas": 5256,
+  "total_edificios_afectados": 3348,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5157,
+      "valor": 5256,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 1972,
+      "valor": 2016,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 879,
+      "valor": 884,
       "unidad": "edificios"
     },
     {
@@ -36,13 +36,13 @@
     {
       "id": "oficinas",
       "label": "Oficinas",
-      "valor": 4,
+      "valor": 5,
       "unidad": "edificios"
     },
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 327,
+      "valor": 329,
       "unidad": "edificios"
     }
   ],
@@ -68,8 +68,8 @@
     {
       "ccaa": "COMUNIDAD_VALENCIANA",
       "provincia": "CASTELLON",
-      "num_viviendas_afectadas": 126,
-      "num_edificios_afectados": 240
+      "num_viviendas_afectadas": 127,
+      "num_edificios_afectados": 244
     },
     {
       "ccaa": "ANDALUCIA",
@@ -82,6 +82,12 @@
       "provincia": "ZARAGOZA",
       "num_viviendas_afectadas": 168,
       "num_edificios_afectados": 137
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "HUELVA",
+      "num_viviendas_afectadas": 114,
+      "num_edificios_afectados": 64
     },
     {
       "ccaa": "CASTILLA_LEON",
@@ -99,7 +105,7 @@
       "ccaa": "CASTILLA_LEON",
       "provincia": "SEGOVIA",
       "num_viviendas_afectadas": 32,
-      "num_edificios_afectados": 98
+      "num_edificios_afectados": 103
     },
     {
       "ccaa": "CASTILLA_LEON",
@@ -136,12 +142,6 @@
       "provincia": "TOLEDO",
       "num_viviendas_afectadas": 25,
       "num_edificios_afectados": 37
-    },
-    {
-      "ccaa": "ANDALUCIA",
-      "provincia": "HUELVA",
-      "num_viviendas_afectadas": 16,
-      "num_edificios_afectados": 22
     },
     {
       "ccaa": "EXTREMADURA",
@@ -228,14 +228,14 @@
       "num_edificios_afectados": 2
     },
     {
-      "ccaa": "ANDALUCIA",
-      "provincia": "SEVILLA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 1
-    },
-    {
       "ccaa": "GALICIA",
       "provincia": "OURENSE",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 2
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "SEVILLA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 1
     },
