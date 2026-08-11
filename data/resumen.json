@@ -1,18 +1,18 @@
 {
   "fecha": "2026-08-11",
-  "total_viviendas_afectadas": 5523,
-  "total_edificios_afectados": 3510,
+  "total_viviendas_afectadas": 5525,
+  "total_edificios_afectados": 3514,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5523,
+      "valor": 5525,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2072,
+      "valor": 2076,
       "unidad": "edificios"
     },
     {
@@ -122,8 +122,8 @@
     {
       "ccaa": "ARAGON",
       "provincia": "HUESCA",
-      "num_viviendas_afectadas": 3,
-      "num_edificios_afectados": 64
+      "num_viviendas_afectadas": 5,
+      "num_edificios_afectados": 66
     },
     {
       "ccaa": "CATALUÑA",
@@ -147,7 +147,7 @@
       "ccaa": "EXTREMADURA",
       "provincia": "CACERES",
       "num_viviendas_afectadas": 3,
-      "num_edificios_afectados": 24
+      "num_edificios_afectados": 26
     },
     {
       "ccaa": "ARAGON",
