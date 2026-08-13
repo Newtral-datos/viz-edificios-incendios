@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-08-12",
+  "fecha": "2026-08-13",
   "total_viviendas_afectadas": 5529,
-  "total_edificios_afectados": 3570,
+  "total_edificios_afectados": 3575,
   "categorias": [
     {
       "id": "viviendas",
@@ -12,7 +12,7 @@
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2128,
+      "valor": 2133,
       "unidad": "edificios"
     },
     {
@@ -69,7 +69,7 @@
       "ccaa": "ANDALUCIA",
       "provincia": "HUELVA",
       "num_viviendas_afectadas": 379,
-      "num_edificios_afectados": 264
+      "num_edificios_afectados": 269
     },
     {
       "ccaa": "COMUNIDAD_VALENCIANA",
