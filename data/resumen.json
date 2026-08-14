@@ -1,30 +1,30 @@
 {
-  "fecha": "2026-08-13",
-  "total_viviendas_afectadas": 5529,
-  "total_edificios_afectados": 3575,
+  "fecha": "2026-08-14",
+  "total_viviendas_afectadas": 5549,
+  "total_edificios_afectados": 3630,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5529,
+      "valor": 5549,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2133,
+      "valor": 2181,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 967,
+      "valor": 969,
       "unidad": "edificios"
     },
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 99,
+      "valor": 103,
       "unidad": "edificios"
     },
     {
@@ -42,7 +42,7 @@
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 335,
+      "valor": 336,
       "unidad": "edificios"
     }
   ],
@@ -60,22 +60,22 @@
       "num_edificios_afectados": 1344
     },
     {
+      "ccaa": "ANDALUCIA",
+      "provincia": "HUELVA",
+      "num_viviendas_afectadas": 379,
+      "num_edificios_afectados": 297
+    },
+    {
       "ccaa": "CASTILLA_LA_MANCHA",
       "provincia": "GUADALAJARA",
       "num_viviendas_afectadas": 309,
       "num_edificios_afectados": 349
     },
     {
-      "ccaa": "ANDALUCIA",
-      "provincia": "HUELVA",
-      "num_viviendas_afectadas": 379,
-      "num_edificios_afectados": 269
-    },
-    {
       "ccaa": "COMUNIDAD_VALENCIANA",
       "provincia": "CASTELLON",
-      "num_viviendas_afectadas": 127,
-      "num_edificios_afectados": 244
+      "num_viviendas_afectadas": 126,
+      "num_edificios_afectados": 243
     },
     {
       "ccaa": "ANDALUCIA",
@@ -114,16 +114,16 @@
       "num_edificios_afectados": 44
     },
     {
+      "ccaa": "ARAGON",
+      "provincia": "HUESCA",
+      "num_viviendas_afectadas": 26,
+      "num_edificios_afectados": 96
+    },
+    {
       "ccaa": "CANTABRIA",
       "provincia": "CANTABRIA",
       "num_viviendas_afectadas": 15,
       "num_edificios_afectados": 105
-    },
-    {
-      "ccaa": "ARAGON",
-      "provincia": "HUESCA",
-      "num_viviendas_afectadas": 5,
-      "num_edificios_afectados": 70
     },
     {
       "ccaa": "CATALUÑA",
@@ -216,6 +216,12 @@
       "num_edificios_afectados": 4
     },
     {
+      "ccaa": "ANDALUCIA",
+      "provincia": "SEVILLA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 3
+    },
+    {
       "ccaa": "GALICIA",
       "provincia": "LUGO",
       "num_viviendas_afectadas": 1,
@@ -232,12 +238,6 @@
       "provincia": "OURENSE",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 2
-    },
-    {
-      "ccaa": "ANDALUCIA",
-      "provincia": "SEVILLA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 1
     },
     {
       "ccaa": "ANDALUCIA",
