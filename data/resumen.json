@@ -1,36 +1,36 @@
 {
-  "fecha": "2026-08-17",
-  "total_viviendas_afectadas": 5549,
-  "total_edificios_afectados": 3638,
+  "fecha": "2026-08-18",
+  "total_viviendas_afectadas": 5688,
+  "total_edificios_afectados": 3714,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5549,
+      "valor": 5688,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2188,
+      "valor": 2214,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 969,
+      "valor": 1004,
       "unidad": "edificios"
     },
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 102,
+      "valor": 112,
       "unidad": "edificios"
     },
     {
       "id": "comercial",
       "label": "Comercial",
-      "valor": 34,
+      "valor": 37,
       "unidad": "edificios"
     },
     {
@@ -42,7 +42,7 @@
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 336,
+      "valor": 338,
       "unidad": "edificios"
     }
   ],
@@ -78,6 +78,12 @@
       "num_edificios_afectados": 243
     },
     {
+      "ccaa": "ARAGON",
+      "provincia": "HUESCA",
+      "num_viviendas_afectadas": 165,
+      "num_edificios_afectados": 173
+    },
+    {
       "ccaa": "ANDALUCIA",
       "provincia": "ALMERIA",
       "num_viviendas_afectadas": 148,
@@ -106,12 +112,6 @@
       "provincia": "BARCELONA",
       "num_viviendas_afectadas": 114,
       "num_edificios_afectados": 24
-    },
-    {
-      "ccaa": "ARAGON",
-      "provincia": "HUESCA",
-      "num_viviendas_afectadas": 26,
-      "num_edificios_afectados": 97
     },
     {
       "ccaa": "CASTILLA_LEON",
