@@ -1,18 +1,18 @@
 {
   "fecha": "2026-08-19",
-  "total_viviendas_afectadas": 5575,
-  "total_edificios_afectados": 3671,
+  "total_viviendas_afectadas": 5670,
+  "total_edificios_afectados": 3717,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5575,
+      "valor": 5670,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2207,
+      "valor": 2228,
       "unidad": "edificios"
     },
     {
@@ -24,13 +24,13 @@
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 102,
+      "valor": 103,
       "unidad": "edificios"
     },
     {
       "id": "comercial",
       "label": "Comercial",
-      "valor": 34,
+      "valor": 35,
       "unidad": "edificios"
     },
     {
@@ -42,7 +42,7 @@
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 336,
+      "valor": 359,
       "unidad": "edificios"
     }
   ],
@@ -68,7 +68,7 @@
     {
       "ccaa": "CASTILLA_LA_MANCHA",
       "provincia": "GUADALAJARA",
-      "num_viviendas_afectadas": 309,
+      "num_viviendas_afectadas": 310,
       "num_edificios_afectados": 349
     },
     {
@@ -94,6 +94,12 @@
       "provincia": "HUESCA",
       "num_viviendas_afectadas": 52,
       "num_edificios_afectados": 130
+    },
+    {
+      "ccaa": "EXTREMADURA",
+      "provincia": "CACERES",
+      "num_viviendas_afectadas": 97,
+      "num_edificios_afectados": 72
     },
     {
       "ccaa": "CASTILLA_LEON",
@@ -142,12 +148,6 @@
       "provincia": "TOLEDO",
       "num_viviendas_afectadas": 25,
       "num_edificios_afectados": 37
-    },
-    {
-      "ccaa": "EXTREMADURA",
-      "provincia": "CACERES",
-      "num_viviendas_afectadas": 3,
-      "num_edificios_afectados": 26
     },
     {
       "ccaa": "ARAGON",
