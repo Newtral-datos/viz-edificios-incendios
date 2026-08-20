@@ -1,18 +1,18 @@
 {
-  "fecha": "2026-08-19",
-  "total_viviendas_afectadas": 5670,
-  "total_edificios_afectados": 3717,
+  "fecha": "2026-08-20",
+  "total_viviendas_afectadas": 5671,
+  "total_edificios_afectados": 3719,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5670,
+      "valor": 5671,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2228,
+      "valor": 2230,
       "unidad": "edificios"
     },
     {
@@ -228,6 +228,12 @@
       "num_edificios_afectados": 2
     },
     {
+      "ccaa": "GALICIA",
+      "provincia": "PONTEVEDRA",
+      "num_viviendas_afectadas": 1,
+      "num_edificios_afectados": 2
+    },
+    {
       "ccaa": "CATALUÑA",
       "provincia": "TARRAGONA",
       "num_viviendas_afectadas": 1,
@@ -320,12 +326,6 @@
     {
       "ccaa": "COMUNIDAD_VALENCIANA",
       "provincia": "VALENCIA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 0
-    },
-    {
-      "ccaa": "GALICIA",
-      "provincia": "PONTEVEDRA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 0
     },
