@@ -1,48 +1,48 @@
 {
-  "fecha": "2026-08-20",
-  "total_viviendas_afectadas": 5671,
-  "total_edificios_afectados": 3719,
+  "fecha": "2026-08-21",
+  "total_viviendas_afectadas": 5543,
+  "total_edificios_afectados": 3600,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5671,
+      "valor": 5543,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2230,
+      "valor": 2207,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 983,
+      "valor": 904,
       "unidad": "edificios"
     },
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 103,
+      "valor": 92,
       "unidad": "edificios"
     },
     {
       "id": "comercial",
       "label": "Comercial",
-      "valor": 35,
+      "valor": 30,
       "unidad": "edificios"
     },
     {
       "id": "oficinas",
       "label": "Oficinas",
-      "valor": 9,
+      "valor": 6,
       "unidad": "edificios"
     },
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 359,
+      "valor": 361,
       "unidad": "edificios"
     }
   ],
@@ -50,20 +50,14 @@
     {
       "ccaa": "COMUNIDAD_DE_MADRID",
       "provincia": "MADRID",
-      "num_viviendas_afectadas": 2508,
-      "num_edificios_afectados": 363
+      "num_viviendas_afectadas": 2524,
+      "num_edificios_afectados": 369
     },
     {
       "ccaa": "CASTILLA_LEON",
       "provincia": "AVILA",
       "num_viviendas_afectadas": 1485,
       "num_edificios_afectados": 1344
-    },
-    {
-      "ccaa": "ANDALUCIA",
-      "provincia": "HUELVA",
-      "num_viviendas_afectadas": 379,
-      "num_edificios_afectados": 297
     },
     {
       "ccaa": "CASTILLA_LA_MANCHA",
@@ -84,22 +78,28 @@
       "num_edificios_afectados": 185
     },
     {
+      "ccaa": "EXTREMADURA",
+      "provincia": "CACERES",
+      "num_viviendas_afectadas": 218,
+      "num_edificios_afectados": 93
+    },
+    {
       "ccaa": "ARAGON",
       "provincia": "ZARAGOZA",
       "num_viviendas_afectadas": 168,
-      "num_edificios_afectados": 137
+      "num_edificios_afectados": 142
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "HUELVA",
+      "num_viviendas_afectadas": 121,
+      "num_edificios_afectados": 171
     },
     {
       "ccaa": "ARAGON",
       "provincia": "HUESCA",
-      "num_viviendas_afectadas": 52,
-      "num_edificios_afectados": 130
-    },
-    {
-      "ccaa": "EXTREMADURA",
-      "provincia": "CACERES",
-      "num_viviendas_afectadas": 97,
-      "num_edificios_afectados": 72
+      "num_viviendas_afectadas": 44,
+      "num_edificios_afectados": 110
     },
     {
       "ccaa": "CASTILLA_LEON",
@@ -164,7 +164,7 @@
     {
       "ccaa": "EXTREMADURA",
       "provincia": "BADAJOZ",
-      "num_viviendas_afectadas": 4,
+      "num_viviendas_afectadas": 5,
       "num_edificios_afectados": 12
     },
     {
@@ -172,12 +172,6 @@
       "provincia": "LLEIDA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 11
-    },
-    {
-      "ccaa": "ANDALUCIA",
-      "provincia": "SEVILLA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 10
     },
     {
       "ccaa": "ASTURIAS",
@@ -202,6 +196,12 @@
       "provincia": "A_CORUÑA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 6
+    },
+    {
+      "ccaa": "ANDALUCIA",
+      "provincia": "SEVILLA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 5
     },
     {
       "ccaa": "CASTILLA_LEON",
