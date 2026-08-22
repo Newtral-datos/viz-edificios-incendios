@@ -1,24 +1,24 @@
 {
-  "fecha": "2026-08-21",
-  "total_viviendas_afectadas": 5543,
-  "total_edificios_afectados": 3600,
+  "fecha": "2026-08-22",
+  "total_viviendas_afectadas": 5555,
+  "total_edificios_afectados": 3605,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5543,
+      "valor": 5555,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2207,
+      "valor": 2210,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 904,
+      "valor": 906,
       "unidad": "edificios"
     },
     {
@@ -80,8 +80,8 @@
     {
       "ccaa": "EXTREMADURA",
       "provincia": "CACERES",
-      "num_viviendas_afectadas": 218,
-      "num_edificios_afectados": 93
+      "num_viviendas_afectadas": 229,
+      "num_edificios_afectados": 97
     },
     {
       "ccaa": "ARAGON",
@@ -122,8 +122,8 @@
     {
       "ccaa": "CASTILLA_LEON",
       "provincia": "LEON",
-      "num_viviendas_afectadas": 79,
-      "num_edificios_afectados": 44
+      "num_viviendas_afectadas": 80,
+      "num_edificios_afectados": 45
     },
     {
       "ccaa": "CANTABRIA",
