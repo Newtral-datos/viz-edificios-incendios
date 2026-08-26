@@ -1,30 +1,30 @@
 {
-  "fecha": "2026-08-25",
-  "total_viviendas_afectadas": 5555,
-  "total_edificios_afectados": 3605,
+  "fecha": "2026-08-26",
+  "total_viviendas_afectadas": 5375,
+  "total_edificios_afectados": 3567,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5555,
+      "valor": 5375,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2210,
+      "valor": 2187,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 906,
+      "valor": 904,
       "unidad": "edificios"
     },
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 92,
+      "valor": 89,
       "unidad": "edificios"
     },
     {
@@ -42,7 +42,7 @@
     {
       "id": "sin_clasificar",
       "label": "Sin uso registrado",
-      "valor": 361,
+      "valor": 351,
       "unidad": "edificios"
     }
   ],
@@ -50,7 +50,7 @@
     {
       "ccaa": "COMUNIDAD_DE_MADRID",
       "provincia": "MADRID",
-      "num_viviendas_afectadas": 2524,
+      "num_viviendas_afectadas": 2523,
       "num_edificios_afectados": 369
     },
     {
@@ -76,12 +76,6 @@
       "provincia": "ALMERIA",
       "num_viviendas_afectadas": 148,
       "num_edificios_afectados": 185
-    },
-    {
-      "ccaa": "EXTREMADURA",
-      "provincia": "CACERES",
-      "num_viviendas_afectadas": 229,
-      "num_edificios_afectados": 97
     },
     {
       "ccaa": "ARAGON",
@@ -130,6 +124,12 @@
       "provincia": "CANTABRIA",
       "num_viviendas_afectadas": 15,
       "num_edificios_afectados": 105
+    },
+    {
+      "ccaa": "EXTREMADURA",
+      "provincia": "CACERES",
+      "num_viviendas_afectadas": 50,
+      "num_edificios_afectados": 59
     },
     {
       "ccaa": "CATALUÑA",
