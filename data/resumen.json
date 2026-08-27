@@ -1,24 +1,24 @@
 {
-  "fecha": "2026-08-26",
-  "total_viviendas_afectadas": 5375,
-  "total_edificios_afectados": 3567,
+  "fecha": "2026-08-27",
+  "total_viviendas_afectadas": 5377,
+  "total_edificios_afectados": 3574,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5375,
+      "valor": 5377,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2187,
+      "valor": 2193,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 904,
+      "valor": 905,
       "unidad": "edificios"
     },
     {
@@ -180,6 +180,12 @@
       "num_edificios_afectados": 10
     },
     {
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "VALENCIA",
+      "num_viviendas_afectadas": 2,
+      "num_edificios_afectados": 7
+    },
+    {
       "ccaa": "MURCIA",
       "provincia": "MURCIA",
       "num_viviendas_afectadas": 4,
@@ -320,12 +326,6 @@
     {
       "ccaa": "COMUNIDAD_VALENCIANA",
       "provincia": "ALICANTE",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 0
-    },
-    {
-      "ccaa": "COMUNIDAD_VALENCIANA",
-      "provincia": "VALENCIA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 0
     },
