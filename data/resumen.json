@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-08-28",
+  "fecha": "2026-08-31",
   "total_viviendas_afectadas": 5377,
-  "total_edificios_afectados": 3574,
+  "total_edificios_afectados": 3577,
   "categorias": [
     {
       "id": "viviendas",
@@ -12,7 +12,7 @@
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2193,
+      "valor": 2196,
       "unidad": "edificios"
     },
     {
@@ -132,16 +132,16 @@
       "num_edificios_afectados": 59
     },
     {
+      "ccaa": "CASTILLA_LA_MANCHA",
+      "provincia": "CIUDAD_REAL",
+      "num_viviendas_afectadas": 39,
+      "num_edificios_afectados": 26
+    },
+    {
       "ccaa": "CATALUÑA",
       "provincia": "GIRONA",
       "num_viviendas_afectadas": 34,
       "num_edificios_afectados": 29
-    },
-    {
-      "ccaa": "CASTILLA_LA_MANCHA",
-      "provincia": "CIUDAD_REAL",
-      "num_viviendas_afectadas": 39,
-      "num_edificios_afectados": 23
     },
     {
       "ccaa": "CASTILLA_LA_MANCHA",
