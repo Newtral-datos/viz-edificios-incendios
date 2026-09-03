@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-01",
+  "fecha": "2026-09-03",
   "total_viviendas_afectadas": 5377,
-  "total_edificios_afectados": 3577,
+  "total_edificios_afectados": 3578,
   "categorias": [
     {
       "id": "viviendas",
@@ -24,7 +24,7 @@
     {
       "id": "servicios_publicos",
       "label": "Servicios públicos",
-      "valor": 89,
+      "valor": 90,
       "unidad": "edificios"
     },
     {
@@ -111,7 +111,7 @@
       "ccaa": "CATALUÑA",
       "provincia": "BARCELONA",
       "num_viviendas_afectadas": 114,
-      "num_edificios_afectados": 24
+      "num_edificios_afectados": 25
     },
     {
       "ccaa": "CASTILLA_LEON",
