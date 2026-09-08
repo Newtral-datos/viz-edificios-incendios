@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-07",
+  "fecha": "2026-09-08",
   "total_viviendas_afectadas": 5377,
-  "total_edificios_afectados": 3578,
+  "total_edificios_afectados": 3584,
   "categorias": [
     {
       "id": "viviendas",
@@ -12,13 +12,13 @@
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2196,
+      "valor": 2199,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 905,
+      "valor": 908,
       "unidad": "edificios"
     },
     {
@@ -75,7 +75,7 @@
       "ccaa": "ANDALUCIA",
       "provincia": "ALMERIA",
       "num_viviendas_afectadas": 148,
-      "num_edificios_afectados": 185
+      "num_edificios_afectados": 186
     },
     {
       "ccaa": "ARAGON",
@@ -117,7 +117,7 @@
       "ccaa": "CASTILLA_LEON",
       "provincia": "LEON",
       "num_viviendas_afectadas": 80,
-      "num_edificios_afectados": 45
+      "num_edificios_afectados": 48
     },
     {
       "ccaa": "CANTABRIA",
@@ -240,6 +240,12 @@
       "num_edificios_afectados": 2
     },
     {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "BURGOS",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 2
+    },
+    {
       "ccaa": "CATALUÑA",
       "provincia": "TARRAGONA",
       "num_viviendas_afectadas": 1,
@@ -290,12 +296,6 @@
     {
       "ccaa": "CASTILLA_LA_MANCHA",
       "provincia": "CUENCA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 0
-    },
-    {
-      "ccaa": "CASTILLA_LEON",
-      "provincia": "BURGOS",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 0
     },
