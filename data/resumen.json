@@ -1,24 +1,24 @@
 {
-  "fecha": "2026-09-09",
-  "total_viviendas_afectadas": 5377,
-  "total_edificios_afectados": 3584,
+  "fecha": "2026-09-21",
+  "total_viviendas_afectadas": 5382,
+  "total_edificios_afectados": 3604,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5377,
+      "valor": 5382,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2199,
+      "valor": 2212,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 908,
+      "valor": 915,
       "unidad": "edificios"
     },
     {
@@ -87,7 +87,7 @@
       "ccaa": "ANDALUCIA",
       "provincia": "HUELVA",
       "num_viviendas_afectadas": 121,
-      "num_edificios_afectados": 171
+      "num_edificios_afectados": 178
     },
     {
       "ccaa": "ARAGON",
@@ -150,16 +150,16 @@
       "num_edificios_afectados": 37
     },
     {
+      "ccaa": "ANDALUCIA",
+      "provincia": "MALAGA",
+      "num_viviendas_afectadas": 10,
+      "num_edificios_afectados": 9
+    },
+    {
       "ccaa": "ARAGON",
       "provincia": "TERUEL",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 19
-    },
-    {
-      "ccaa": "ANDALUCIA",
-      "provincia": "MALAGA",
-      "num_viviendas_afectadas": 9,
-      "num_edificios_afectados": 8
     },
     {
       "ccaa": "EXTREMADURA",
@@ -171,7 +171,13 @@
       "ccaa": "CATALUÑA",
       "provincia": "LLEIDA",
       "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 11
+      "num_edificios_afectados": 13
+    },
+    {
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "VALENCIA",
+      "num_viviendas_afectadas": 2,
+      "num_edificios_afectados": 10
     },
     {
       "ccaa": "ASTURIAS",
@@ -180,16 +186,16 @@
       "num_edificios_afectados": 10
     },
     {
-      "ccaa": "COMUNIDAD_VALENCIANA",
-      "provincia": "VALENCIA",
-      "num_viviendas_afectadas": 2,
-      "num_edificios_afectados": 7
-    },
-    {
       "ccaa": "MURCIA",
       "provincia": "MURCIA",
       "num_viviendas_afectadas": 4,
       "num_edificios_afectados": 5
+    },
+    {
+      "ccaa": "GALICIA",
+      "provincia": "LUGO",
+      "num_viviendas_afectadas": 2,
+      "num_edificios_afectados": 6
     },
     {
       "ccaa": "ANDALUCIA",
@@ -216,22 +222,22 @@
       "num_edificios_afectados": 5
     },
     {
-      "ccaa": "ANDALUCIA",
-      "provincia": "CADIZ",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 4
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "ALICANTE",
+      "num_viviendas_afectadas": 3,
+      "num_edificios_afectados": 2
     },
     {
       "ccaa": "LA_RIOJA",
       "provincia": "LA_RIOJA",
       "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 4
+      "num_edificios_afectados": 5
     },
     {
-      "ccaa": "GALICIA",
-      "provincia": "LUGO",
-      "num_viviendas_afectadas": 1,
-      "num_edificios_afectados": 2
+      "ccaa": "ANDALUCIA",
+      "provincia": "CADIZ",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 4
     },
     {
       "ccaa": "GALICIA",
@@ -320,12 +326,6 @@
     {
       "ccaa": "CEUTA",
       "provincia": "CEUTA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 0
-    },
-    {
-      "ccaa": "COMUNIDAD_VALENCIANA",
-      "provincia": "ALICANTE",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 0
     },
