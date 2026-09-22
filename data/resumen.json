@@ -1,24 +1,24 @@
 {
-  "fecha": "2026-09-21",
-  "total_viviendas_afectadas": 5382,
-  "total_edificios_afectados": 3604,
+  "fecha": "2026-09-22",
+  "total_viviendas_afectadas": 5391,
+  "total_edificios_afectados": 3593,
   "categorias": [
     {
       "id": "viviendas",
       "label": "Viviendas",
-      "valor": 5382,
+      "valor": 5391,
       "unidad": "viviendas"
     },
     {
       "id": "agrario",
       "label": "Agrario",
-      "valor": 2212,
+      "valor": 2204,
       "unidad": "edificios"
     },
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 915,
+      "valor": 912,
       "unidad": "edificios"
     },
     {
@@ -86,8 +86,8 @@
     {
       "ccaa": "ANDALUCIA",
       "provincia": "HUELVA",
-      "num_viviendas_afectadas": 121,
-      "num_edificios_afectados": 178
+      "num_viviendas_afectadas": 130,
+      "num_edificios_afectados": 172
     },
     {
       "ccaa": "ARAGON",
@@ -128,7 +128,7 @@
     {
       "ccaa": "EXTREMADURA",
       "provincia": "CACERES",
-      "num_viviendas_afectadas": 50,
+      "num_viviendas_afectadas": 51,
       "num_edificios_afectados": 59
     },
     {
@@ -174,28 +174,22 @@
       "num_edificios_afectados": 13
     },
     {
-      "ccaa": "COMUNIDAD_VALENCIANA",
-      "provincia": "VALENCIA",
-      "num_viviendas_afectadas": 2,
-      "num_edificios_afectados": 10
-    },
-    {
       "ccaa": "ASTURIAS",
       "provincia": "ASTURIAS",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 10
     },
     {
+      "ccaa": "COMUNIDAD_VALENCIANA",
+      "provincia": "VALENCIA",
+      "num_viviendas_afectadas": 2,
+      "num_edificios_afectados": 8
+    },
+    {
       "ccaa": "MURCIA",
       "provincia": "MURCIA",
       "num_viviendas_afectadas": 4,
       "num_edificios_afectados": 5
-    },
-    {
-      "ccaa": "GALICIA",
-      "provincia": "LUGO",
-      "num_viviendas_afectadas": 2,
-      "num_edificios_afectados": 6
     },
     {
       "ccaa": "ANDALUCIA",
@@ -238,6 +232,12 @@
       "provincia": "CADIZ",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 4
+    },
+    {
+      "ccaa": "GALICIA",
+      "provincia": "LUGO",
+      "num_viviendas_afectadas": 1,
+      "num_edificios_afectados": 3
     },
     {
       "ccaa": "GALICIA",
