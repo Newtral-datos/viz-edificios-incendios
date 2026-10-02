@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-30",
+  "fecha": "2026-10-02",
   "total_viviendas_afectadas": 5392,
-  "total_edificios_afectados": 3595,
+  "total_edificios_afectados": 3596,
   "categorias": [
     {
       "id": "viviendas",
@@ -18,7 +18,7 @@
     {
       "id": "industrial",
       "label": "Industrial",
-      "valor": 912,
+      "valor": 913,
       "unidad": "edificios"
     },
     {
@@ -264,6 +264,12 @@
       "num_edificios_afectados": 2
     },
     {
+      "ccaa": "CASTILLA_LEON",
+      "provincia": "SORIA",
+      "num_viviendas_afectadas": 0,
+      "num_edificios_afectados": 1
+    },
+    {
       "ccaa": "ANDALUCIA",
       "provincia": "CORDOBA",
       "num_viviendas_afectadas": 0,
@@ -314,12 +320,6 @@
     {
       "ccaa": "CASTILLA_LEON",
       "provincia": "SALAMANCA",
-      "num_viviendas_afectadas": 0,
-      "num_edificios_afectados": 0
-    },
-    {
-      "ccaa": "CASTILLA_LEON",
-      "provincia": "SORIA",
       "num_viviendas_afectadas": 0,
       "num_edificios_afectados": 0
     },
